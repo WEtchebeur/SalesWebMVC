@@ -6,7 +6,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SalesWebMVC.Controllers
+namespace SalesWebMVC.Models.ViewModels.SalesWebMVC.Controllers
 {
     public class HomeController : Controller
     {
@@ -17,7 +17,8 @@ namespace SalesWebMVC.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "Sales Web MVC App from C# Course";
+            ViewData["student"] = "William Etchebeur";
 
             return View();
         }
